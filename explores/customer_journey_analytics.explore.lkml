@@ -72,7 +72,7 @@ explore: customer_journey_analytics {
     fields: [customer_id]
   }
   join: marketing_campaign_analytics {
-    view_label: "Marketing Campaing Analytics"
+    view_label: "Marketing Campaign Analytics"
     sql_on: ${customers.campaign_id} = ${marketing_campaign_analytics.campaign_id} ;;
     relationship: many_to_one
     type: left_outer

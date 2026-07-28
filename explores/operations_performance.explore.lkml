@@ -32,7 +32,7 @@ explore: inventory_levels {
     sorts: [supply_chain_management.average_supplier_lead_time: desc]
   }
   query: warehouse_damage_theft_adjustments {
-    label: "Warehoue Damage and Theft Adjustments"
+    label: "Warehouse Damage and Theft Adjustments"
     description: "Which 10 warehouses have the highest frequency or volume of damage/theft adjustment?"
     dimensions: [warehouses.warehouse_name]
     measures: [inventory_movements.total_quantity]

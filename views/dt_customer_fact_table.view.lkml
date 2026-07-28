@@ -1,5 +1,6 @@
 view: dt_customer_fact_table {
   derived_table: {
+    datagroup_trigger: google_retail_default_datagroup
     explore_source: orders {
       column: customer_id { field: customers.customer_id }
       column: number_of_orders {}

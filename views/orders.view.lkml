@@ -581,15 +581,15 @@ view: orders {
     hidden: no
     label: "First Order Date"
     description: "The earliest date any customer in your selection placed an order. Useful for understanding new customer acquisition or overall history."
-    type: string
-    sql: MIN(${order_date}) ;;
+    type: min
+    sql: ${order_date} ;;
   }
   measure: last_order_date {
     hidden: no
     label: "Most Recent Order Date"
     description: "The latest date any customer in your selection placed an order. Great for tracking recent activity."
-    type: string
-    sql: MAX(${order_date}) ;;
+    type: max
+    sql: ${order_date} ;;
   }
   measure: number_of_orders {
     hidden: no
